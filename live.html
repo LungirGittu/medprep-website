@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FBF8F2">
+  <title>MedPrep - Focused preparation for science students</title>
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Skip to content -->
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- Header -->
+  <header id="main-header">
+    <div class="container header-inner">
+      <a href="index.html" class="wordmark" style="text-decoration: none; color: inherit;">MedPrep</a>
+
+      <!-- Mobile menu toggle -->
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Navigation -->
+      <nav id="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="live.html" aria-current="page">Live & Guidance</a></li>
+          <li><a href="#">Mock Tests</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <!-- PLACEHOLDER CONTENT: All content on this page is placeholder. -->
+
+    <!-- Page Intro -->
+    <section class="page-hero" aria-labelledby="hero-heading">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow hero-fade" style="--d: 0">Live & Guidance</p>
+          <h1 id="hero-heading">
+            <span class="h1-line-wrapper"><span class="h1-line" style="--d: 1">Study smarter.</span></span>
+            <span class="h1-line-wrapper"><span class="h1-line" style="--d: 2"><em>Ask anything.</em></span></span>
+          </h1>
+          <p class="hero-subline hero-fade" style="--d: 3; max-width: 520px;">Monthly live sessions, recorded Q&A, and practical guides on how to study, for students and parents.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next Live Session -->
+    <section id="next-live" class="section">
+      <div class="container reveal">
+        <div class="next-live-card">
+          <div class="next-live-info">
+            <div class="amber-pill">
+              <span class="pulsing-dot" aria-hidden="true"></span>
+              Next live session
+            </div>
+            <h2>Study Planning for Term Exams: Live Q&A</h2>
+            <p>A relaxed 60-minute session. Bring your questions and we will answer as many as we can.</p>
+            <div class="pill-group">
+              <span class="card-pill">Students</span>
+            </div>
+            <p class="meta-row">Saturday &middot; 8:00 PM (Bangladesh time) &middot; 60 min</p>
+            <div class="actions">
+              <div class="primary-action">
+                <a href="#" class="btn btn-primary" id="join-btn">Join live session</a>
+                <span class="small-note">Opens 10 minutes before the session</span>
+              </div>
+              <button class="btn btn-outline" id="add-to-calendar">Add to calendar</button>
+            </div>
+          </div>
+          <div class="next-live-countdown">
+            <!-- 2026-11-07T20:00:00+06:00 is a placeholder date -->
+            <div class="countdown-boxes" id="countdown-timer" data-start="2026-11-07T20:00:00+06:00">
+              <div class="countdown-box">
+                <span class="countdown-val" id="cd-days">00</span>
+                <span class="countdown-label">Days</span>
+              </div>
+              <div class="countdown-box">
+                <span class="countdown-val" id="cd-hours">00</span>
+                <span class="countdown-label">Hours</span>
+              </div>
+              <div class="countdown-box">
+                <span class="countdown-val" id="cd-mins">00</span>
+                <span class="countdown-label">Minutes</span>
+              </div>
+              <div class="countdown-box">
+                <span class="countdown-val" id="cd-secs">00</span>
+                <span class="countdown-label">Seconds</span>
+              </div>
+            </div>
+            <p id="countdown-ended-msg" hidden>This session has ended. Watch the recording below.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Library: Filter Row + Recordings + Guides -->
+    <section id="library" class="section bg-paper">
+      <div class="container">
+
+        <!-- Audience Filter Row -->
+        <div class="filter-row reveal">
+          <span class="filter-label" id="audience-filter-label">Show content for</span>
+          <div class="filter-chips" role="group" aria-labelledby="audience-filter-label" id="audience-filters">
+            <button class="chip" aria-pressed="true" data-audience="all">All</button>
+            <button class="chip" aria-pressed="false" data-audience="students">Students</button>
+            <button class="chip" aria-pressed="false" data-audience="parents">Parents</button>
+          </div>
+          <span class="filter-count" aria-live="polite" id="audience-filter-count">Showing 12 items</span>
+        </div>
+
+        <!-- Recorded Sessions -->
+        <div class="library-section">
+          <div class="section-header reveal">
+            <p class="eyebrow">Watch anytime</p>
+            <h2>Recorded sessions</h2>
+          </div>
+          <div class="grid cards-grid recordings-grid">
+
+            <!-- Recording 1 -->
+            <a href="#" class="recording-card reveal" style="--d: 1" data-audience="students">
+              <div class="thumbnail-panel bg-tint-teal">
+                <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                  <circle cx="28" cy="28" r="27.5" fill="white" stroke="var(--ink)"/>
+                  <path d="M36 28L23.25 35.3612L23.25 20.6388L36 28Z" fill="var(--ink)"/>
+                </svg>
+                <span class="duration-pill">58 min</span>
+              </div>
+              <div class="card-content">
+                <span class="card-pill">Students</span>
+                <h3>Live Q&amp;A: Planning Your Term Exam Study</h3>
+                <p class="muted-line">How to build a realistic plan and stick to it.</p>
+                <div class="card-footer row">
+                  <span class="date">Sample date</span>
+                  <span class="action-link">Watch &rarr;</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Recording 2 -->
+            <a href="#" class="recording-card reveal" style="--d: 2" data-audience="parents">
+              <div class="thumbnail-panel bg-tint-amber">
+                <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                  <circle cx="28" cy="28" r="27.5" fill="white" stroke="var(--ink)"/>
+                  <path d="M36 28L23.25 35.3612L23.25 20.6388L36 28Z" fill="var(--ink)"/>
+                </svg>
+                <span class="duration-pill">46 min</span>
+              </div>
+              <div class="card-content">
+                <span class="card-pill">Parents</span>
+                <h3>Parents' Night: Supporting Without Pressure</h3>
+                <p class="muted-line">How to help at home without adding stress.</p>
+                <div class="card-footer row">
+                  <span class="date">Sample date</span>
+                  <span class="action-link">Watch &rarr;</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Recording 3 -->
+            <a href="#" class="recording-card reveal" style="--d: 3" data-audience="students">
+              <div class="thumbnail-panel bg-tint-paper">
+                <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                  <circle cx="28" cy="28" r="27.5" fill="white" stroke="var(--ink)"/>
+                  <path d="M36 28L23.25 35.3612L23.25 20.6388L36 28Z" fill="var(--ink)"/>
+                </svg>
+                <span class="duration-pill">62 min</span>
+              </div>
+              <div class="card-content">
+                <span class="card-pill">Students</span>
+                <h3>Using AI to Study Without Cheating Yourself</h3>
+                <p class="muted-line">What AI tools are good for, where they fail, and how to check them.</p>
+                <div class="card-footer row">
+                  <span class="date">Sample date</span>
+                  <span class="action-link">Watch &rarr;</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Recording 4 -->
+            <a href="#" class="recording-card reveal" style="--d: 4" data-audience="parents">
+              <div class="thumbnail-panel bg-tint-teal">
+                <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                  <circle cx="28" cy="28" r="27.5" fill="white" stroke="var(--ink)"/>
+                  <path d="M36 28L23.25 35.3612L23.25 20.6388L36 28Z" fill="var(--ink)"/>
+                </svg>
+                <span class="duration-pill">41 min</span>
+              </div>
+              <div class="card-content">
+                <span class="card-pill">Parents</span>
+                <h3>Reading a Report Card and Setting Goals</h3>
+                <p class="muted-line">Understand results and set goals that are realistic.</p>
+                <div class="card-footer row">
+                  <span class="date">Sample date</span>
+                  <span class="action-link">Watch &rarr;</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Recording 5 -->
+            <a href="#" class="recording-card reveal" style="--d: 5" data-audience="students">
+              <div class="thumbnail-panel bg-tint-amber">
+                <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                  <circle cx="28" cy="28" r="27.5" fill="white" stroke="var(--ink)"/>
+                  <path d="M36 28L23.25 35.3612L23.25 20.6388L36 28Z" fill="var(--ink)"/>
+                </svg>
+                <span class="duration-pill">40 min</span>
+              </div>
+              <div class="card-content">
+                <span class="card-pill">Students</span>
+                <h3>Learning Biology Diagrams and Processes</h3>
+                <p class="muted-line">Practical ways to remember diagrams, cycles and steps.</p>
+                <div class="card-footer row">
+                  <span class="date">Sample date</span>
+                  <span class="action-link">Watch &rarr;</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Recording 6 -->
+            <a href="#" class="recording-card reveal" style="--d: 6" data-audience="both">
+              <div class="thumbnail-panel bg-tint-paper">
+                <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                  <circle cx="28" cy="28" r="27.5" fill="white" stroke="var(--ink)"/>
+                  <path d="M36 28L23.25 35.3612L23.25 20.6388L36 28Z" fill="var(--ink)"/>
+                </svg>
+                <span class="duration-pill">35 min</span>
+              </div>
+              <div class="card-content">
+                <span class="card-pill">Both</span>
+                <h3>Where to Study: Trusted Free Resources</h3>
+                <p class="muted-line">Reliable places to learn from, for students and parents.</p>
+                <div class="card-footer row">
+                  <span class="date">Sample date</span>
+                  <span class="action-link">Watch &rarr;</span>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Study Guides -->
+        <div class="library-section">
+          <div class="section-header reveal">
+            <p class="eyebrow">Read and apply</p>
+            <h2>Study guides</h2>
+          </div>
+          <div class="grid cards-grid guides-grid">
+
+            <!-- Guide 1 -->
+            <a href="#" class="guide-card reveal" style="--d: 1" data-audience="students">
+              <div class="guide-header row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="guide-icon">
+                  <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                </svg>
+                <span class="card-pill">Students</span>
+              </div>
+              <h3>How to Use AI for Studying: A Safe Starter Guide</h3>
+              <p class="muted-line">Use AI to understand, not to copy, and always check the answer.</p>
+              <div class="card-footer row">
+                <span class="read-time">6 min read</span>
+                <span class="action-link">Read guide &rarr;</span>
+              </div>
+            </a>
+
+            <!-- Guide 2 -->
+            <a href="#" class="guide-card reveal" style="--d: 2" data-audience="students">
+              <div class="guide-header row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="guide-icon">
+                  <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>
+                </svg>
+                <span class="card-pill">Students</span>
+              </div>
+              <h3>How to Study Efficiently for a Specific Exam</h3>
+              <p class="muted-line">Work backwards from the exam: syllabus, past questions, practice.</p>
+              <div class="card-footer row">
+                <span class="read-time">8 min read</span>
+                <span class="action-link">Read guide &rarr;</span>
+              </div>
+            </a>
+
+            <!-- Guide 3 -->
+            <a href="#" class="guide-card reveal" style="--d: 3" data-audience="both">
+              <div class="guide-header row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="guide-icon">
+                  <circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+                </svg>
+                <span class="card-pill">Both</span>
+              </div>
+              <h3>Where to Study: Trusted Free Resources</h3>
+              <p class="muted-line">Where to find reliable lessons, books and practice questions.</p>
+              <div class="card-footer row">
+                <span class="read-time">5 min read</span>
+                <span class="action-link">Read guide &rarr;</span>
+              </div>
+            </a>
+
+            <!-- Guide 4 -->
+            <a href="#" class="guide-card reveal" style="--d: 4" data-audience="students">
+              <div class="guide-header row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="guide-icon">
+                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/>
+                </svg>
+                <span class="card-pill">Students</span>
+              </div>
+              <h3>A Simple Weekly Study Plan</h3>
+              <p class="muted-line">A one-page plan you can copy and adjust.</p>
+              <div class="card-footer row">
+                <span class="read-time">4 min read</span>
+                <span class="action-link">Read guide &rarr;</span>
+              </div>
+            </a>
+
+            <!-- Guide 5 -->
+            <a href="#" class="guide-card reveal" style="--d: 5" data-audience="parents">
+              <div class="guide-header row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="guide-icon">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+                <span class="card-pill">Parents</span>
+              </div>
+              <h3>How to Support Your Child's Studying</h3>
+              <p class="muted-line">Practical habits that help without pressure.</p>
+              <div class="card-footer row">
+                <span class="read-time">6 min read</span>
+                <span class="action-link">Read guide &rarr;</span>
+              </div>
+            </a>
+
+            <!-- Guide 6 -->
+            <a href="#" class="guide-card reveal" style="--d: 6" data-audience="parents">
+              <div class="guide-header row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="guide-icon">
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+                </svg>
+                <span class="card-pill">Parents</span>
+              </div>
+              <h3>Sleep, Screens and Exams: A Parent's Guide</h3>
+              <p class="muted-line">Why sleep matters more than one extra hour of study.</p>
+              <div class="card-footer row">
+                <span class="read-time">5 min read</span>
+                <span class="action-link">Read guide &rarr;</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ask a Question -->
+    <section id="ask" class="section">
+      <div class="container ask-grid reveal">
+        <div class="ask-info">
+          <p class="eyebrow">Ask a question</p>
+          <h2>Send us your <em>question.</em></h2>
+          <p>We read every question and answer as many as we can in the next live session. Your name is never read out.</p>
+          <p class="small-note">Please do not include phone numbers or addresses.</p>
+        </div>
+        <div class="ask-form-container">
+          <div id="ask-form-wrapper">
+            <!-- No form action used, handled by JS -->
+            <div class="form-group">
+              <label for="q-name">Your name (optional)</label>
+              <input type="text" id="q-name" class="form-control" name="q-name">
+            </div>
+
+            <div class="form-group">
+              <label for="q-role">I am a</label>
+              <select id="q-role" class="form-control" name="q-role">
+                <option value="Student">Student</option>
+                <option value="Parent">Parent</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="q-class">Class</label>
+              <select id="q-class" class="form-control" name="q-class">
+                <option value="Not sure">Not sure</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="q-question">Your question <span aria-hidden="true" class="req">*</span></label>
+              <textarea id="q-question" class="form-control" name="q-question" required maxlength="500" aria-describedby="q-char-count q-error"></textarea>
+              <div class="form-meta">
+                <span id="q-char-count" class="char-count">0 / 500</span>
+              </div>
+              <span id="q-error" class="inline-error" role="alert" hidden>Please enter a question.</span>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="q-consent" name="q-consent" required aria-describedby="consent-error">
+              <label for="q-consent">I understand my question may be read out in a live session without my name.</label>
+            </div>
+            <span id="consent-error" class="inline-error" role="alert" hidden>You must agree to continue.</span>
+
+            <button type="button" class="btn btn-primary" id="submit-question">Send question</button>
+          </div>
+          <!-- Success message hidden by default -->
+          <div id="ask-success" hidden>
+            <h3>Thank you! Your question has been noted.</h3>
+            <p class="small-note">Demo only: nothing was sent yet.</p>
+            <!-- A real submission would go here (e.g. backend fetch or Google Forms submit) -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing Band -->
+    <section class="cta-band" aria-labelledby="live-cta-heading">
+      <div class="container reveal">
+        <h2 id="live-cta-heading">Never miss a session.</h2>
+        <a href="#next-live" class="btn btn-highlight">Next live session</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="wordmark"><a href="index.html">MedPrep</a></div>
+      <p>Focused preparation for science students.</p>
+      <p class="copyright">© 2026 MedPrep. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
