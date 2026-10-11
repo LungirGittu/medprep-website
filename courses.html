@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FBF8F2">
+  <title>MedPrep - Courses</title>
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Skip to content -->
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- Header -->
+  <header id="main-header">
+    <div class="container header-inner">
+      <a href="index.html" class="wordmark" style="text-decoration: none; color: inherit;">MedPrep</a>
+
+      <!-- Mobile menu toggle -->
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Navigation -->
+      <nav id="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html" aria-current="page">Courses</a></li>
+          <li><a href="#">Mock Tests</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Page Intro -->
+    <section class="page-hero" aria-labelledby="hero-heading">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow hero-fade">Courses</div>
+          <h1 id="hero-heading">
+            <span class="h1-line-wrapper"><span class="h1-line">Courses built for</span></span>
+            <span class="h1-line-wrapper">
+              <span class="h1-line" style="position: relative;">
+                <em>science students.</em>
+              </span>
+            </span>
+          </h1>
+          <p class="hero-subline hero-fade" style="max-width: 520px;">
+            Pick a course, follow the plan, and track your progress as you learn.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Course -->
+    <section id="featured" aria-labelledby="featured-heading">
+      <div class="container reveal" style="--d: 1;">
+        <div class="featured-card">
+          <div class="featured-text">
+            <div class="featured-pill">Featured</div>
+            <h2 id="featured-heading">Complete Biology for Medical Admission</h2>
+            <p>A structured path through every major biology topic, with a mock test after each unit.</p>
+            <ul class="featured-checks">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                48 video lessons
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Unit-wise mock tests
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Mistake tracker included
+              </li>
+            </ul>
+            <div class="meta-row">48 lessons · 22 hours · Admission prep</div>
+            <div class="featured-footer">
+              <div class="price">৳4,500</div>
+              <a href="#" class="btn btn-primary">View course</a>
+            </div>
+          </div>
+          <div class="featured-illustration" style="background-color: var(--tint-teal);" aria-hidden="true">
+            <svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg" class="ill-featured">
+              <!-- Cell (left side) -->
+              <g transform="translate(-40, 0)">
+                <ellipse cx="160" cy="120" rx="90" ry="70" fill="var(--accent)" fill-opacity="0.15" stroke="var(--ink)" stroke-width="1.5" />
+                <circle cx="160" cy="120" r="25" fill="none" stroke="var(--ink)" stroke-width="1.5" />
+                <circle cx="155" cy="115" r="8" fill="var(--ink)" />
+                <ellipse cx="110" cy="100" rx="12" ry="6" fill="var(--highlight)" stroke="var(--ink)" stroke-width="1.5" class="anim-drift" style="animation-delay: 0s;" />
+                <ellipse cx="200" cy="140" rx="10" ry="5" fill="none" stroke="var(--ink)" stroke-width="1.5" class="anim-drift" style="animation-delay: -2s;" />
+                <circle cx="140" cy="160" r="4" fill="var(--ink)" class="anim-drift" style="animation-delay: -4s;" />
+                <circle cx="190" cy="90" r="5" fill="none" stroke="var(--ink)" stroke-width="1.5" class="anim-drift" style="animation-delay: -1s;" />
+              </g>
+              <!-- DNA (right side) -->
+              <g transform="translate(70, 0)" class="anim-float">
+                <path d="M160 40 Q200 80 160 120 T160 200" fill="none" stroke="var(--ink)" stroke-width="1.5" />
+                <path d="M160 40 Q120 80 160 120 T160 200" fill="none" stroke="var(--ink)" stroke-width="1.5" />
+                <line x1="145" y1="60" x2="175" y2="60" stroke="var(--ink)" stroke-width="1.5" />
+                <line x1="140" y1="75" x2="180" y2="75" stroke="var(--ink)" stroke-width="1.5" />
+                <line x1="140" y1="90" x2="180" y2="90" stroke="var(--ink)" stroke-width="1.5" />
+                <line x1="145" y1="105" x2="175" y2="105" stroke="var(--ink)" stroke-width="1.5" />
+                <line x1="145" y1="135" x2="175" y2="135" stroke="var(--ink)" stroke-width="1.5" />
+                <line x1="140" y1="150" x2="180" y2="150" stroke="var(--ink)" stroke-width="1.5" />
+                <line x1="140" y1="165" x2="180" y2="165" stroke="var(--ink)" stroke-width="1.5" />
+                <line x1="145" y1="180" x2="175" y2="180" stroke="var(--ink)" stroke-width="1.5" />
+                <circle cx="175" cy="60" r="3" fill="var(--highlight)" />
+                <circle cx="180" cy="150" r="3" fill="var(--highlight)" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses List Section -->
+    <section class="courses-list">
+      <div class="container">
+        <div class="filter-row">
+          <span class="filter-label" id="filter-label">Filter by level</span>
+          <div class="filter-chips" role="group" aria-labelledby="filter-label">
+            <button type="button" class="chip" aria-pressed="true" data-filter="all">All</button>
+            <button type="button" class="chip" aria-pressed="false" data-filter="Class 9–10">Class 9–10</button>
+            <button type="button" class="chip" aria-pressed="false" data-filter="Class 11–12">Class 11–12</button>
+            <button type="button" class="chip" aria-pressed="false" data-filter="Admission prep">Admission prep</button>
+          </div>
+          <div class="filter-count" aria-live="polite">Showing 6 courses</div>
+        </div>
+
+        <div class="course-grid">
+          <!-- Card 1 -->
+          <article class="course-card reveal" style="--d: 1;" data-level="Class 9–10">
+            <div class="card-thumb" style="background-color: var(--tint-teal);" aria-hidden="true">
+              <svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="160" cy="120" rx="90" ry="70" fill="var(--accent)" fill-opacity="0.15" stroke="var(--ink)" stroke-width="1.5" />
+                <circle cx="160" cy="120" r="25" fill="none" stroke="var(--ink)" stroke-width="1.5" />
+                <circle cx="155" cy="115" r="8" fill="var(--ink)" />
+                <ellipse cx="110" cy="100" rx="12" ry="6" fill="var(--highlight)" stroke="var(--ink)" stroke-width="1.5" class="anim-drift" style="animation-delay: 0s;" />
+                <ellipse cx="200" cy="140" rx="10" ry="5" fill="none" stroke="var(--ink)" stroke-width="1.5" class="anim-drift" style="animation-delay: -2s;" />
+                <circle cx="140" cy="160" r="4" fill="var(--ink)" class="anim-drift" style="animation-delay: -4s;" />
+                <circle cx="190" cy="90" r="5" fill="none" stroke="var(--ink)" stroke-width="1.5" class="anim-drift" style="animation-delay: -1s;" />
+              </svg>
+            </div>
+            <div class="card-content">
+              <span class="card-pill">Class 9–10</span>
+              <h3 class="card-title"><a href="#" class="stretched-link">Cell Biology Essentials</a></h3>
+              <p class="card-desc">Understand the cell, its organelles and how they work together.</p>
+              <div class="card-meta">
+                <span class="meta-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg> 12 lessons</span>
+                <span class="meta-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4 hrs</span>
+              </div>
+              <div class="card-footer">
+                <!-- Prices placeholder -->
+                <span class="price-pill">Free</span>
+                <span class="view-link">View course <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="course-card reveal" style="--d: 2;" data-level="Class 11–12">
+            <div class="card-thumb" style="background-color: var(--tint-amber);" aria-hidden="true">
+              <svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg" class="anim-float">
+                <path d="M160 40 Q200 80 160 120 T160 200" fill="none" stroke="var(--ink)" stroke-width="1.5" />
+                <path d="M160 40 Q120 80 160 120 T160 200" fill="none" stroke="var(--ink)" stroke-width="1.5" />
+                <line x1="145" y1="60" x2="175" y2="60" stroke="var(--ink)" stroke-width="1.5" />
+                <line x1="140" y1="75" x2="180" y2="75" stroke="var(--ink)" stroke-width="1.5" />
+                <line x1="140" y1="90" x2="180" y2="90" stroke="var(--ink)" stroke-width="1.5" />
+                <line x1="145" y1="105" x2="175" y2="105" stroke="var(--ink)" stroke-width="1.5" />
+                <line x1="145" y1="135" x2="175" y2="135" stroke="var(--ink)" stroke-width="1.5" />
+                <line x1="140" y1="150" x2="180" y2="150" stroke="var(--ink)" stroke-width="1.5" />
+                <line x1="140" y1="165" x2="180" y2="165" stroke="var(--ink)" stroke-width="1.5" />
+                <line x1="145" y1="180" x2="175" y2="180" stroke="var(--ink)" stroke-width="1.5" />
+                <circle cx="175" cy="60" r="3" fill="var(--highlight)" />
+                <circle cx="180" cy="150" r="3" fill="var(--highlight)" />
+              </svg>
+            </div>
+            <div class="card-content">
+              <span class="card-pill">Class 11–12</span>
+              <h3 class="card-title"><a href="#" class="stretched-link">Genetics & DNA</a></h3>
+              <p class="card-desc">From Mendel to molecular genetics, explained step by step.</p>
+              <div class="card-meta">
+                <span class="meta-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg> 18 lessons</span>
+                <span class="meta-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 7 hrs</span>
+              </div>
+              <div class="card-footer">
+                <!-- Prices placeholder -->
+                <span class="price">৳1,200</span>
+                <span class="view-link">View course <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="course-card reveal" style="--d: 3;" data-level="Class 11–12">
+            <div class="card-thumb" style="background-color: var(--tint-paper);" aria-hidden="true">
+              <svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+                <path d="M80 120 L40 80 M80 120 L40 160 M80 120 L60 60 M80 120 L60 180" stroke="var(--ink)" stroke-width="1.5" />
+                <circle cx="80" cy="120" r="15" fill="var(--accent)" fill-opacity="0.15" stroke="var(--ink)" stroke-width="1.5" />
+                <circle cx="80" cy="120" r="4" fill="var(--ink)" />
+                <path d="M95 120 Q160 90 240 120" fill="none" stroke="var(--ink)" stroke-width="1.5" class="anim-axon-path" id="axon" />
+                <circle r="4" fill="var(--accent-bright)">
+                  <animateMotion dur="3s" repeatCount="indefinite" path="M95 120 Q160 90 240 120" />
+                </circle>
+                <path d="M240 120 L270 100 M240 120 L280 120 M240 120 L270 140" stroke="var(--ink)" stroke-width="1.5" />
+                <circle cx="270" cy="100" r="3" fill="var(--highlight)" />
+                <circle cx="280" cy="120" r="3" fill="var(--highlight)" />
+                <circle cx="270" cy="140" r="3" fill="var(--highlight)" />
+              </svg>
+            </div>
+            <div class="card-content">
+              <span class="card-pill">Class 11–12</span>
+              <h3 class="card-title"><a href="#" class="stretched-link">The Nervous System</a></h3>
+              <p class="card-desc">How neurons carry signals and how the brain coordinates the body.</p>
+              <div class="card-meta">
+                <span class="meta-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg> 14 lessons</span>
+                <span class="meta-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 hrs</span>
+              </div>
+              <div class="card-footer">
+                <!-- Prices placeholder -->
+                <span class="price">৳1,200</span>
+                <span class="view-link">View course <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="course-card reveal" style="--d: 4;" data-level="Class 9–10">
+            <div class="card-thumb" style="background-color: var(--tint-teal);" aria-hidden="true">
+              <svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+                <path d="M160 180 C 160 180, 80 120, 80 75 C 80 40, 120 40, 160 75 C 200 40, 240 40, 240 75 C 240 120, 160 180, 160 180 Z" fill="var(--accent)" fill-opacity="0.15" stroke="var(--ink)" stroke-width="1.5" />
+                <path d="M60 120 L110 120 L130 60 L180 160 L210 120 L260 120" fill="none" stroke="var(--highlight)" stroke-width="1.5" class="anim-ecg" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="card-content">
+              <span class="card-pill">Class 9–10</span>
+              <h3 class="card-title"><a href="#" class="stretched-link">Heart & Circulation</a></h3>
+              <p class="card-desc">Follow blood through the heart, vessels and the whole body.</p>
+              <div class="card-meta">
+                <span class="meta-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg> 10 lessons</span>
+                <span class="meta-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 3.5 hrs</span>
+              </div>
+              <div class="card-footer">
+                <!-- Prices placeholder -->
+                <span class="price">৳900</span>
+                <span class="view-link">View course <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="course-card reveal" style="--d: 5;" data-level="Class 9–10">
+            <div class="card-thumb" style="background-color: var(--tint-amber);" aria-hidden="true">
+              <svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+                <path d="M160 210 Q 160 180, 160 160 C 100 160, 100 60, 160 40 C 220 60, 220 160, 160 160" fill="var(--accent)" fill-opacity="0.15" stroke="var(--ink)" stroke-width="1.5" />
+                <path d="M160 210 L160 40" stroke="var(--ink)" stroke-width="1.5" />
+                <!-- 5 pairs of side veins -->
+                <path d="M160 140 L130 110 M160 140 L190 110" stroke="var(--ink)" stroke-width="1.5" />
+                <path d="M160 120 L135 95 M160 120 L185 95" stroke="var(--ink)" stroke-width="1.5" />
+                <path d="M160 100 L140 80 M160 100 L180 80" stroke="var(--ink)" stroke-width="1.5" />
+                <path d="M160 80 L145 65 M160 80 L175 65" stroke="var(--ink)" stroke-width="1.5" />
+                <path d="M160 60 L150 50 M160 60 L170 50" stroke="var(--ink)" stroke-width="1.5" />
+
+                <g class="anim-sun">
+                  <circle cx="260" cy="50" r="10" fill="var(--highlight)" />
+                  <path d="M260 30 L260 25 M260 70 L260 75 M240 50 L235 50 M280 50 L285 50 M245 35 L240 30 M275 65 L280 70 M245 65 L240 70 M275 35 L280 30" stroke="var(--highlight)" stroke-width="2" stroke-linecap="round" />
+                </g>
+              </svg>
+            </div>
+            <div class="card-content">
+              <span class="card-pill">Class 9–10</span>
+              <h3 class="card-title"><a href="#" class="stretched-link">Plant Biology & Photosynthesis</a></h3>
+              <p class="card-desc">How plants make food, move water and respond to the world.</p>
+              <div class="card-meta">
+                <span class="meta-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg> 12 lessons</span>
+                <span class="meta-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4 hrs</span>
+              </div>
+              <div class="card-footer">
+                <!-- Prices placeholder -->
+                <span class="price">৳900</span>
+                <span class="view-link">View course <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="course-card reveal" style="--d: 6;" data-level="Admission prep">
+            <div class="card-thumb" style="background-color: var(--tint-paper);" aria-hidden="true">
+              <svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+                <!-- Hexagon -->
+                <polygon points="160,80 190,100 190,140 160,160 130,140 130,100" fill="var(--accent)" fill-opacity="0.15" stroke="var(--ink)" stroke-width="1.5" />
+                <line x1="135" y1="105" x2="135" y2="135" stroke="var(--ink)" stroke-width="1.5" />
+                <line x1="160" y1="150" x2="182" y2="137" stroke="var(--ink)" stroke-width="1.5" />
+                <line x1="160" y1="90" x2="182" y2="103" stroke="var(--ink)" stroke-width="1.5" />
+
+                <!-- Bobbing atoms -->
+                <g class="anim-bob" style="animation-delay: 0s;">
+                  <line x1="160" y1="80" x2="160" y2="50" stroke="var(--ink)" stroke-width="1.5" />
+                  <circle cx="160" cy="50" r="6" fill="var(--highlight)" stroke="var(--ink)" stroke-width="1.5" />
+                </g>
+                <g class="anim-bob" style="animation-delay: -1.3s;">
+                  <line x1="130" y1="140" x2="100" y2="160" stroke="var(--ink)" stroke-width="1.5" />
+                  <circle cx="100" cy="160" r="6" fill="var(--accent-bright)" stroke="var(--ink)" stroke-width="1.5" />
+                </g>
+                <g class="anim-bob" style="animation-delay: -2.6s;">
+                  <line x1="190" y1="140" x2="220" y2="160" stroke="var(--ink)" stroke-width="1.5" />
+                  <circle cx="220" cy="160" r="6" fill="var(--ink)" />
+                </g>
+              </svg>
+            </div>
+            <div class="card-content">
+              <span class="card-pill">Admission prep</span>
+              <h3 class="card-title"><a href="#" class="stretched-link">Biomolecules & Enzymes</a></h3>
+              <p class="card-desc">Carbohydrates, proteins, lipids and the enzymes that drive life.</p>
+              <div class="card-meta">
+                <span class="meta-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg> 16 lessons</span>
+                <span class="meta-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 6 hrs</span>
+              </div>
+              <div class="card-footer">
+                <!-- Prices placeholder -->
+                <span class="price">৳1,500</span>
+                <span class="view-link">View course <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Band -->
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <div class="container reveal">
+        <h2 id="cta-heading">Not sure where to start?</h2>
+        <a href="#featured" class="btn btn-highlight">
+          See the featured course
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <a href="index.html" class="wordmark" style="text-decoration: none; color: inherit;">MedPrep</a>
+      <p>Focused preparation for science students.</p>
+      <p class="copyright">© 2026 MedPrep. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
